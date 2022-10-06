@@ -1,0 +1,118 @@
+/* FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;600;700&display=swap');
+/* VARIABLES */
+:root{
+    --blue: hsl(223, 87%, 63%);
+    --paleBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --veryDarkBlue: hsl(209, 33%, 12%);
+    --fuente: 'Kumbh Sans', sans-serif;
+}
+
+/* REINICIAR HTML */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%; /*Eso es para poder utilizar los rem en el codigo css*/
+    box-sizing: border-box; /**Sirve para que el tamaño de una imagen se quede fija y no se agregue el tamaño de un padding, sose llegua a agregar**/
+    font-family: var(--fuente);
+    text-align: center;
+}
+*,*:before, *:after{ /*Tambien tiene que ver con lo del tamaño de la imagen*/
+    box-sizing: inherit;
+}
+img{
+    width: 100%;
+}
+/* ESTILO */
+.main{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.logo img{
+    width: 8rem;
+}
+.logo{
+    margin: 5rem 0;
+}
+.info h1{
+    font-weight: 300;
+    font-size: 5rem;
+    color: var(--gray);
+}
+.info h1 span{
+    font-weight: 700;
+    color: var(--veryDarkBlue);
+}
+.info p{
+    font-size: 2rem;
+    color: var(--veryDarkBlue);
+    margin: 1rem 0 4rem 0;
+}
+.con--formulario form{
+    display: flex;
+    gap: 2rem;
+}
+.input{
+    padding: 1.6rem 3rem;
+    font-weight: 600;
+    border: 0.1rem solid var(--paleBlue);
+    border-radius: 4rem;
+    outline: none;
+    font-family: var(--fuente);
+    font-size: 1.5rem;
+    width: 70%;
+}
+.input::placeholder{
+    color: var(--paleBlue);
+}
+.btn{
+    background-color: var(--blue);
+    color: #ffffff;
+    font-family: var(--fuente);
+    font-weight: 600;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    border-radius: 4rem;
+    width: 30%;
+    box-shadow: rgba(0, 102, 255, 0.4) 0px 10px 20px -10px;
+    cursor: pointer;
+}
+.img--dashboard{
+    margin: 8rem 0;
+}
+.redes--sociales{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.redes--icon{
+    border: 0.1rem solid var(--paleBlue);
+    padding: 0.2rem;
+    border-radius: 100%;
+    text-align: center;
+}
+.icon{
+    padding: 0.3rem;
+}
+.copyright{
+    margin: 2rem 0;
+    color: var(--gray);
+    font-size: 1.5rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.error{
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--lightRed);
+    margin: 0.5rem 3rem;
+    text-align: start;
+}
+.activo{
+    outline: 0.1rem solid var(--lightRed);
+}
